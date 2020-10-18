@@ -1,0 +1,26 @@
+def frozen_string_literal
+end
+puts 'Hey Giselle :D '
+time = Time.new
+time_cod = Time.mktime(2020, 11, 13)
+time_crash = Time.mktime(2020, 7, 12)
+time_genshin = Time.mktime(2020, 9, 3)
+# set the values for three video games and provided the dates Year, Month, Date
+if time_cod.to_i.negative? || time_cod.to_i.zero?
+  puts 'Its already out'
+else
+  puts 'there are ' + ((((time_cod - time) / 60) / 60) / 24).to_i.to_i.to_s + ' days left until Call of Duty 6 is out'
+end
+# Formally stated the ranges of the game date; if early it will address the time, if past put already out
+if time_crash.to_i.negative? || time_crash.to_i.zero?
+  puts 'its already out'
+else
+  puts 'there are' + (((time_crash - time / 60) / 60) / 24).to_i.to_s + 'days left until Crash Bandicoot is released'
+end
+# set up the same tasks as prior game
+if time_genshin.to_i.negative? || time_genshin.to_i.zero?
+  puts 'its already out'
+else
+  puts 'there are' + (((time_genshin - time / 60) / 60) / 24).to_i.to_s + 'days left until Genshin Impact is released'
+end
+# stated final local variable task
